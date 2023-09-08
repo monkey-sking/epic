@@ -1,30 +1,26 @@
-2023-09-02 15:39:58 | INFO - prelude- {'action': 'Checking the operating environment'}
-2023-09-02 15:39:58 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
-2023-09-02 15:39:58 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
-2023-09-02 15:39:58 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
-2023-09-02 15:40:02 | INFO - execute task- {'name': 'claim_epic_games'}
-2023-09-02 15:40:02 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
-2023-09-02 15:40:07 | INFO - login- {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-09-02 15:40:08 | INFO - login-with-epic- {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
-2023-09-02 15:40:13 | DEBUG - claim_weekly_games- {'action': 'handle challenge'}
-2023-09-02 15:40:13 | DEBUG - Downloading resource- {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/digit2_yolov8s.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/digit2_yolov8s.onnx'}
-2023-09-02 15:40:20 | DEBUG - handle challenge- {'result': 'success'}
-2023-09-02 15:40:27 | SUCCESS - login- {'result': 'token has not expired'}
-2023-09-02 15:40:42 | SUCCESS - flush_token- {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
-2023-09-02 15:40:43 | INFO - claim_weekly_games- {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/cave-story-plus'}
-2023-09-02 15:41:19 | ERROR - An error has been caught in function '_run', process 'MainProcess' (3558), thread 'MainThread' (140030261386112):- {}
+2023-09-09 07:20:40 | INFO - prelude- {'action': 'Checking the operating environment'}
+2023-09-09 07:20:40 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
+2023-09-09 07:20:41 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
+2023-09-09 07:20:41 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
+2023-09-09 07:20:44 | INFO - execute task- {'name': 'claim_epic_games'}
+2023-09-09 07:20:44 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
+2023-09-09 07:20:46 | SUCCESS - login- {'result': 'token has not expired'}
+2023-09-09 07:20:57 | SUCCESS - flush_token- {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
+2023-09-09 07:20:58 | WARNING - Failed to get order history, cookie may have expired- {}
+2023-09-09 07:20:58 | INFO - claim_weekly_games- {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/spelldrifter'}
+2023-09-09 07:21:09 | ERROR - An error has been caught in function '_run', process 'MainProcess' (3499), thread 'MainThread' (140115130833984):- {}
 Traceback (most recent call last):
   File "/home/runner/work/epic/epic/epic/src/claim.py", line 94, in <module>
     asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
     self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
     self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
     handle._run()
-> File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+> File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
   File "/home/runner/work/epic/epic/epic/src/claim.py", line 90, in run
     await agent.execute(sequence=[claim_epic_games], headless=True)
@@ -32,21 +28,16 @@ Traceback (most recent call last):
     await container(context)
   File "/home/runner/work/epic/epic/epic/src/claim.py", line 79, in claim_epic_games
     await epic.claim_weekly_games(page, promotions)
-  File "/home/runner/work/epic/epic/epic/src/services/agents/epic_games.py", line 171, in claim_weekly_games
-    text = await cta_btn.text_content()
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 17816, in text_content
-    await self._impl_obj.text_content(timeout=timeout)
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/playwright/_impl/_locator.py", line 608, in text_content
-    return await self._frame.text_content(
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 614, in text_content
-    return await self._channel.send("textContent", locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
-    return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 482, in wrap_api_call
-    return await cb()
-  File "/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 97, in inner_send
-    result = next(iter(done)).result()
-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
+  File "/home/runner/work/epic/epic/epic/src/services/agents/epic_games.py", line 176, in claim_weekly_games
+    await expect(cta_btn).to_have_text("View In Cart")
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 19964, in to_have_text
+    await self._impl_obj.to_have_text(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 455, in to_have_text
+    await self._expect_impl(
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 70, in _expect_impl
+    raise AssertionError(f"{out_message}\nActual value: {actual} {log}")
+AssertionError: Locator expected to have text 'View In Cart'
+Actual value: None 
+Call log:
+LocatorAssertions.to_have_text with timeout 5000ms
 waiting for locator("xpath=//aside//button[@data-testid='add-to-cart-cta-button']")
-============================================================
