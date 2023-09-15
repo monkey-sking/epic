@@ -1,64 +1,9 @@
-2023-09-15 07:21:02 | INFO - prelude- {'action': 'Checking the operating environment'}
-2023-09-15 07:21:03 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
-2023-09-15 07:21:03 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
-2023-09-15 07:21:03 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
-2023-09-15 07:21:05 | INFO - execute task- {'name': 'claim_epic_games'}
-2023-09-15 07:21:05 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
-2023-09-15 07:21:08 | INFO - login- {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-09-15 07:21:09 | INFO - login-with-epic- {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
-2023-09-15 07:21:14 | DEBUG - claim_weekly_games- {'action': 'handle challenge'}
-2023-09-15 07:21:14 | DEBUG - Downloading resource- {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/electronic_device2311.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/electronic_device2311.onnx'}
-2023-09-15 07:21:22 | DEBUG - handle challenge- {'result': 'success'}
-2023-09-15 07:21:27 | SUCCESS - login- {'result': 'token has not expired'}
-2023-09-15 07:21:34 | SUCCESS - flush_token- {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
-2023-09-15 07:21:35 | INFO - claim_weekly_games- {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/911-operator-585edd'}
-2023-09-15 07:21:45 | INFO - claim_weekly_games- {'action': 'move to webPurchaseContainer iframe'}
-2023-09-15 07:21:47 | INFO - claim_weekly_games- {'action': 'click payment button'}
-2023-09-15 07:22:27 | ERROR - An error has been caught in function '_run', process 'MainProcess' (3645), thread 'MainThread' (140312588893248):- {}
-Traceback (most recent call last):
-  File "/home/runner/work/epic/epic/epic/src/services/models.py", line 113, in execute
-    await container(context)
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 79, in claim_epic_games
-    await epic.claim_weekly_games(page, promotions)
-  File "/home/runner/work/epic/epic/epic/src/services/agents/epic_games.py", line 209, in claim_weekly_games
-    await page.wait_for_url(URL_CART_SUCCESS)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 9408, in wait_for_url
-    await self._impl_obj.wait_for_url(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 503, in wait_for_url
-    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 232, in wait_for_url
-    async with self.expect_navigation(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_event_context_manager.py", line 33, in __aexit__
-    await self._future
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 214, in continuation
-    await self._wait_for_load_state_impl(state=wait_until, timeout=t)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 270, in _wait_for_load_state_impl
-    await wait_helper.result()
-playwright._impl._api_types.TimeoutError: Timeout 25860ms exceeded.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 94, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-> File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 90, in run
-    await agent.execute(sequence=[claim_epic_games], headless=True)
-  File "/home/runner/work/epic/epic/epic/src/services/models.py", line 89, in execute
-    async with async_playwright() as p:
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_context_manager.py", line 58, in __aexit__
-    await self._connection.stop_async()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 284, in stop_async
-    self.cleanup(error_message)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 295, in cleanup
-    callback.future.set_exception(Error(error_message))
-asyncio.exceptions.InvalidStateError: invalid state
+2023-09-16 07:20:16 | INFO - prelude- {'action': 'Checking the operating environment'}
+2023-09-16 07:20:16 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
+2023-09-16 07:20:16 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
+2023-09-16 07:20:16 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
+2023-09-16 07:20:18 | INFO - execute task- {'name': 'claim_epic_games'}
+2023-09-16 07:20:18 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
+2023-09-16 07:20:20 | SUCCESS - login- {'result': 'token has not expired'}
+2023-09-16 07:20:29 | SUCCESS - flush_token- {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
+2023-09-16 07:20:30 | SUCCESS - Pass claim task- {'reason': 'All free games of the week are in my library'}
