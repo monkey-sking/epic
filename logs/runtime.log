@@ -1,16 +1,10 @@
-2023-09-22 07:21:45 | INFO    | __main__:from_epic:35 | run - {'stage': 'Initialization EpicPlayer'}
-2023-09-22 07:21:48 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
-2023-09-22 07:21:48 | INFO    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:137 | Reloading the local cache of Assets - {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
-2023-09-22 07:21:48 | DEBUG    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:151 | Pulling Assets index file - {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
-2023-09-22 07:21:49 | INFO    | __main__:claim_epic_games:88 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-09-22 07:21:50 | SUCCESS    | services.agents.epic_games:_login:129 | login - {'result': 'token has not expired'}
-2023-09-22 07:22:01 | SUCCESS    | services.agents.epic_games:flush_token:150 | flush_token - {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
-2023-09-22 07:22:02 | DEBUG    | __main__:create_tasks:47 | Put task - {'title': 'Out of Line', 'url': 'https://store.epicgames.com/en-US/p/out-of-line-209cbb'}
-2023-09-22 07:22:02 | DEBUG    | __main__:create_tasks:47 | Put task - {'title': 'The Forest Quartet', 'url': 'https://store.epicgames.com/en-US/p/forest-quartet-5d03e3'}
-2023-09-22 07:22:02 | INFO    | services.agents.epic_games:claim_weekly_games:164 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/out-of-line-209cbb'}
-2023-09-22 07:22:09 | INFO    | services.agents.epic_games:claim_weekly_games:164 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/forest-quartet-5d03e3'}
-2023-09-22 07:22:20 | INFO    | services.agents.epic_games:claim_weekly_games:199 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-09-22 07:22:24 | INFO    | services.agents.epic_games:claim_weekly_games:206 | claim_weekly_games - {'action': 'click payment button'}
-2023-09-22 07:22:25 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:333 | match model - {'resnet': 'something_you_can_eat2310.onnx', 'prompt': 'Please click each image containing something you can eаt'}
-2023-09-22 07:22:25 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/something_you_can_eat2310.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/something_you_can_eat2310.onnx'}
-2023-09-22 07:22:39 | SUCCESS    | services.agents.epic_games:claim_weekly_games:223 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-09-23 07:20:45 | INFO    | __main__:from_epic:35 | run - {'stage': 'Initialization EpicPlayer'}
+2023-09-23 07:20:48 | DEBUG    | hcaptcha_challenger.onnx.modelhub:request_resource:46 | Downloading resource - {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
+2023-09-23 07:20:48 | INFO    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:137 | Reloading the local cache of Assets - {'assets_dir': '/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
+2023-09-23 07:20:48 | DEBUG    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:151 | Pulling Assets index file - {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
+2023-09-23 07:20:49 | INFO    | __main__:claim_epic_games:88 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-09-23 07:20:52 | SUCCESS    | services.agents.epic_games:_login:129 | login - {'result': 'token has not expired'}
+2023-09-23 07:21:05 | SUCCESS    | services.agents.epic_games:flush_token:150 | flush_token - {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
+2023-09-23 07:21:06 | DEBUG    | __main__:create_tasks:47 | Put task - {'title': 'Out of Line', 'url': 'https://store.epicgames.com/en-US/p/out-of-line-209cbb'}
+2023-09-23 07:21:06 | DEBUG    | __main__:create_tasks:47 | Put task - {'title': 'The Forest Quartet', 'url': 'https://store.epicgames.com/en-US/p/forest-quartet-5d03e3'}
+2023-09-23 07:21:06 | SUCCESS    | __main__:claim_epic_games:99 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'claim-games'}
