@@ -1,26 +1,14 @@
-2023-10-13 07:22:15 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
-2023-10-13 07:22:22 | ERROR    | __main__:run:126 | An error has been caught in function 'run', process 'MainProcess' (3858), thread 'MainThread' (139627646680128): - {}
-Traceback (most recent call last):
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 130, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/home/runner/work/epic/epic/epic/src/claim.py", line 126, in run
-    await agent.stash()
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 118, in stash
-    if not await self.prelude_with_context(context):
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 71, in prelude_with_context
-    self.create_tasks()
-  File "/home/runner/work/epic/epic/epic/src/claim.py", line 53, in create_tasks
-    self._pros = get_promotions()
-  File "/home/runner/work/epic/epic/epic/src/services/agents/epic_games.py", line 261, in get_promotions
-    query = promotion["catalogNs"]["mappings"][0]["pageSlug"]
-TypeError: 'NoneType' object is not subscriptable
+2023-10-14 07:21:36 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-14 07:21:46 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-14 07:21:46 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-14 07:21:47 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
+2023-10-14 07:22:00 | INFO    | services.agents.epic_games:claim_weekly_games:245 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-14 07:22:03 | INFO    | services.agents.epic_games:claim_weekly_games:247 | claim_weekly_games - {'action': 'click payment button'}
+2023-10-14 07:22:12 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:438 | select model - {'yolo': 'COCO2020_yolov8m.onnx', 'ash': 'please click on the object that appears only once default'}
+2023-10-14 07:22:16 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:438 | select model - {'yolo': 'COCO2020_yolov8m.onnx', 'ash': 'please click on the object that appears only once default'}
+2023-10-14 07:22:23 | SUCCESS    | services.agents.epic_games:claim_weekly_games:258 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-10-14 07:22:23 | INFO    | services.agents.epic_games:claim_bundle_games:262 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
+2023-10-14 07:22:32 | INFO    | services.agents.epic_games:claim_bundle_games:283 | claim_bundle_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-14 07:22:35 | INFO    | services.agents.epic_games:claim_bundle_games:285 | claim_bundle_games - {'action': 'click payment button'}
+2023-10-14 07:22:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_binary_nested_challenge:558 | match model - {'resnet': 'nested_largest_elephant2309.onnx', 'prompt': 'Please click on the largest аnimаl.'}
+2023-10-14 07:22:52 | SUCCESS    | services.agents.epic_games:claim_bundle_games:298 | claim_bundle_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/download?ns=0712c5eca64b47bbbced82cabba9f0d7&id=f18f14a76a874aa883a651fcc8c513d0'}
