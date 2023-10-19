@@ -1,14 +1,9 @@
-2023-10-14 07:21:36 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-14 07:21:46 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Blazing Sails', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-14 07:21:46 | DEBUG    | __main__:create_tasks:54 | Put task - {'title': 'Q.U.B.E. ULTIMATE BUNDLE', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
-2023-10-14 07:21:47 | INFO    | services.agents.epic_games:claim_weekly_games:214 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/blazing-sails'}
-2023-10-14 07:22:00 | INFO    | services.agents.epic_games:claim_weekly_games:245 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-14 07:22:03 | INFO    | services.agents.epic_games:claim_weekly_games:247 | claim_weekly_games - {'action': 'click payment button'}
-2023-10-14 07:22:12 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:438 | select model - {'yolo': 'COCO2020_yolov8m.onnx', 'ash': 'please click on the object that appears only once default'}
-2023-10-14 07:22:16 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:438 | select model - {'yolo': 'COCO2020_yolov8m.onnx', 'ash': 'please click on the object that appears only once default'}
-2023-10-14 07:22:23 | SUCCESS    | services.agents.epic_games:claim_weekly_games:258 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
-2023-10-14 07:22:23 | INFO    | services.agents.epic_games:claim_bundle_games:262 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/qube-ultimate-bundle'}
-2023-10-14 07:22:32 | INFO    | services.agents.epic_games:claim_bundle_games:283 | claim_bundle_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-14 07:22:35 | INFO    | services.agents.epic_games:claim_bundle_games:285 | claim_bundle_games - {'action': 'click payment button'}
-2023-10-14 07:22:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_binary_nested_challenge:558 | match model - {'resnet': 'nested_largest_elephant2309.onnx', 'prompt': 'Please click on the largest аnimаl.'}
-2023-10-14 07:22:52 | SUCCESS    | services.agents.epic_games:claim_bundle_games:298 | claim_bundle_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/download?ns=0712c5eca64b47bbbced82cabba9f0d7&id=f18f14a76a874aa883a651fcc8c513d0'}
+2023-10-20 07:21:46 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-20 07:21:54 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'The Evil Within', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within'}
+2023-10-20 07:21:54 | DEBUG    | __main__:create_tasks:60 | Put task - {'title': 'Eternal Threads', 'url': 'https://store.epicgames.com/en-US/p/eternal-threads-197169'}
+2023-10-20 07:21:55 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within'}
+2023-10-20 07:22:02 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/eternal-threads-197169'}
+2023-10-20 07:22:13 | INFO    | epic_games.agent:claim_weekly_games:263 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-20 07:22:16 | INFO    | epic_games.agent:claim_weekly_games:265 | claim_weekly_games - {'action': 'click payment button'}
+2023-10-20 07:22:21 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:377 | match model - {'resnet': 'natural_landscape2313.onnx', 'prompt': 'Please click each image containing natural lаndscаре'}
+2023-10-20 07:22:31 | SUCCESS    | epic_games.agent:claim_weekly_games:276 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
