@@ -1,9 +1,7 @@
-2023-10-27 07:21:57 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-10-27 07:22:09 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'Tandem: A Tale of Shadows', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
-2023-10-27 07:22:09 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-27 07:22:14 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
-2023-10-27 07:22:21 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-27 07:22:34 | INFO    | epic_games.agent:claim_weekly_games:263 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-10-27 07:22:38 | INFO    | epic_games.agent:claim_weekly_games:265 | claim_weekly_games - {'action': 'click payment button'}
-2023-10-27 07:22:49 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:389 | match model - {'resnet': 'sedan_car2309.onnx', 'prompt': 'Please click each image containing a sedan саr'}
-2023-10-27 07:23:01 | SUCCESS    | epic_games.agent:claim_weekly_games:276 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-10-28 07:20:58 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-10-28 07:21:05 | INFO    | __main__:claim_epic_games:95 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-28 07:21:09 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-28 07:21:19 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
+2023-10-28 07:21:21 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'Tandem: A Tale of Shadows', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
+2023-10-28 07:21:21 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-28 07:21:21 | SUCCESS    | __main__:claim_epic_games:106 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'claim-games'}
