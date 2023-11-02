@@ -1,7 +1,2 @@
-2023-10-28 07:20:58 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-10-28 07:21:05 | INFO    | __main__:claim_epic_games:95 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-28 07:21:09 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
-2023-10-28 07:21:19 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/epic/epic/epic/user_data_dir/epic-games@epicgames/ctx_cookie.json')}
-2023-10-28 07:21:21 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'Tandem: A Tale of Shadows', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
-2023-10-28 07:21:21 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-28 07:21:21 | SUCCESS    | __main__:claim_epic_games:106 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'claim-games'}
+2023-11-03 07:23:02 | INFO    | __main__:stash:140 | run - {'image': '20231029', 'version': '0.9.2.post3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-03 07:23:13 | SUCCESS    | __main__:prelude_with_context:84 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}
