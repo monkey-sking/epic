@@ -1,9 +1,9 @@
-2023-11-11 07:21:39 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-11 07:21:44 | WARNING    | epic_games.agent:get_order_history:403 | Failed to get order history, cookie may have expired - {}
-2023-11-11 07:21:45 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Golden Light', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-11 07:21:49 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-11 07:22:04 | SUCCESS    | epic_games.agent:claim_weekly_games:257 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
-2023-11-11 07:22:04 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-11 07:22:19 | SUCCESS    | epic_games.agent:claim_weekly_games:257 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
-2023-11-11 07:22:19 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-11 07:22:34 | SUCCESS    | epic_games.agent:claim_weekly_games:257 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2023-11-17 07:22:08 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-17 07:22:14 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Surviving the Aftermath', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
+2023-11-17 07:22:14 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'EARTHLOCK', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
+2023-11-17 07:22:18 | INFO    | epic_games.agent:claim_weekly_games:280 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/surviving-the-aftermath'}
+2023-11-17 07:22:23 | INFO    | epic_games.agent:claim_weekly_games:280 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/earthlock-e7d979'}
+2023-11-17 07:22:33 | INFO    | epic_games.agent:claim_weekly_games:312 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-11-17 07:22:35 | INFO    | epic_games.agent:claim_weekly_games:314 | claim_weekly_games - {'action': 'click payment button'}
+2023-11-17 07:22:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real lifе'}
+2023-11-17 07:22:52 | SUCCESS    | epic_games.agent:claim_weekly_games:325 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
