@@ -1,4 +1,4 @@
-2024-01-08 19:22:41 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-01-08 19:22:47 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': "Marvel's Guardians of the Galaxy", 'url': 'https://store.epicgames.com/en-US/p/marvels-guardians-of-the-galaxy'}
-2024-01-08 19:22:51 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/marvels-guardians-of-the-galaxy'}
-2024-01-08 19:23:07 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2024-01-09 07:24:37 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-01-09 07:24:42 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': "Marvel's Guardians of the Galaxy", 'url': 'https://store.epicgames.com/en-US/p/marvels-guardians-of-the-galaxy'}
+2024-01-09 07:24:47 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/marvels-guardians-of-the-galaxy'}
+2024-01-09 07:25:02 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
