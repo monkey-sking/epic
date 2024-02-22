@@ -1,5 +1,5 @@
-2024-02-22 07:24:05 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-02-22 07:24:13 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-02-22 07:24:14 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Dakar Desert Rally', 'url': 'https://store.epicgames.com/en-US/p/dakar-desert-rally'}
-2024-02-22 07:24:18 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/dakar-desert-rally'}
-2024-02-22 07:24:35 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2024-02-22 19:20:41 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-02-22 19:20:48 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
+2024-02-22 19:20:49 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Dakar Desert Rally', 'url': 'https://store.epicgames.com/en-US/p/dakar-desert-rally'}
+2024-02-22 19:20:53 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/dakar-desert-rally'}
+2024-02-22 19:21:09 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
